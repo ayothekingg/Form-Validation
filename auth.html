@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="auth.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  
+  
+  <title>Survey Form</title>
+
+
+</head>
+
+
+<body>
+  <h1 id="title">BeTheFirst Survey Form</h1>
+<p id="description"> <em>Thank you for taking the time to help us improve the platform</em></p>
+
+<form id="survey-form" accept-charset="utf-8">
+<h4 id="name-display"></h4>
+        <label for="name" id="name-target">Name</label><br>
+        <input type="text" id="name" placeholder="Enter your name" > <br>
+  <h4 id="email-display"></h4>
+            <label for="Email" id="email-target">Email</label><br>
+            <input type="text" id="email" name="email" placeholder="Enter your email" ><br>
+              <label for="age" id="age">Age (optional)</label><br>
+              <input type ="number" id="age" name="age" placeholder="Age"><br>
+              <label for="phone-number" >Phone number</label><br>
+              <input type="number" id="number-target" name="phone-number" placeholder="Enter your number"><br>
+  <h4 id="number-display"></h4>
+        <label for="password" >Password</label><br>
+        <input type="password" id="password-target"   placeholder="" ><br>
+  <h4 id="password-display"></h4>
+
+  <label for="job" id="job">Job</label><br>
+  <select name="job" id="dropdown" >
+          <option value="student">Student</option>
+          <option value="Employed">Employed</option>
+          <option value="searching">Searching for a job</option>
+          <option value="retired">Retired</option>
+  </select> <br>
+  
+  <p>Would you recommend BeTheFirst to a friend?</p>
+      <input type="radio" class="radio" name="recommend" value="definitely">
+      <label for="definitely">Definitely</label><br>
+      <input type="radio" class="radio" name="recommend" value="maybe">
+      <label for="maybe">Maybe</label><br>
+      <input type="radio" class="radio" name="recommend" value="notsure">
+      <label for="notsure">Not sure</label>
+ 
+      <p>What exactly do you like in our services?</p><br>
+              <input type="checkbox" class="radio" name="Good customer service" value="Good customer service" id="og">
+              <label for="Good customer service" id="og">Good customer service</label><br>
+              <input type="checkbox" class="radio" name="Responsiveness" value="Responsivenesss">
+              <label for="Responsiveness">Responsiveness<label><br>
+                <input type="checkbox" class="radio" name="Good database" value="Good database">
+                <label for="Good database">Good database</label><br><br><br>
+                <label for="comments">Any comments or suggestions?</label><br>
+      <textarea id="comments" name="comments" rows="4" cols="105"></textarea><br>
+      <button type="submit" name="form" value="submit" id="sub">Submit</button>
+  </form>
+
+      <script src="auth.js"></script>
+</body>
+</html>
+
+
